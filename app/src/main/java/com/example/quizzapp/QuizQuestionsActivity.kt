@@ -141,6 +141,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                             intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
                             intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList?.size)
                             startActivity(intent)
+                            // this will finish the current activity so that the user cannot go back
                             finish()
                         }
                     }
