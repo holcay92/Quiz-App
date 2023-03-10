@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 // from this to other activity we need to use intent
                 val intent = Intent(this, QuizQuestionsActivity::class.java)
+                intent.putExtra(Constants.USER_NAME, etName.text.toString())
                 startActivity(intent)
                 // this will finish the current activity and will not allow to go back
                 finish()
